@@ -1,0 +1,28 @@
+{
+  "name": "protofit",
+  "version": "0.0.1",
+  "description": "An automatic typesafe REST library for Typescript.",
+  "main": "index.js",
+  "repository": "git@github.com:Silvenga/protofit.git",
+  "author": "Mark Lopez <m@silvenga.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "./lib/tests/*.js"
+    ],
+    "source": [
+      "./lib/src/*.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "reflect-metadata": "^0.1.12",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {}
+}
